@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Priority Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>Task Priority Manager</h1>
+            <p>Organise your work. Prioritise what matters.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="dashboard">
+
+            <div class="stat-card">
+                <span class="stat-label">Total Tasks</span>
+                <span class="stat-number">6</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">Completed</span>
+                <span class="stat-number">3</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">Pending</span>
+                <span class="stat-number">3</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">High Priority</span>
+                <span class="stat-number">2</span>
+            </div>
+
+        </section>
+
+
+        <section class="task-form-section">
+
+            <h2>Add New Task</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="task">Task</label>
+
+                    <input
+                        type="text"
+                        id="task"
+                        placeholder="Enter your task..."
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+
+                    <select id="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="tasks-section">
+
+            <div class="section-heading">
+                <h2>Your Tasks</h2>
+
+                <button class="filter-button">
+                    All Tasks
+                </button>
+            </div>
+
+
+            <div class="task-list">
+
+                <article class="task-card">
+
+                    <div class="task-information">
+
+                        <h3>Complete Java assignment</h3>
+
+                        <span class="priority high">
+                            High Priority
+                        </span>
+
+                    </div>
+
+                    <div class="task-status pending">
+                        Pending
+                    </div>
+
+                </article>
+
+
+                <article class="task-card">
+
+                    <div class="task-information">
+
+                        <h3>Study Git and GitHub</h3>
+
+                        <span class="priority medium">
+                            Medium Priority
+                        </span>
+
+                    </div>
+
+                    <div class="task-status completed">
+                        Completed
+                    </div>
+
+                </article>
+
+
+                <article class="task-card">
+
+                    <div class="task-information">
+
+                        <h3>Work on portfolio project</h3>
+
+                        <span class="priority high">
+                            High Priority
+                        </span>
+
+                    </div>
+
+                    <div class="task-status pending">
+                        Pending
+                    </div>
+
+                </article>
+
+
+                <article class="task-card">
+
+                    <div class="task-information">
+
+                        <h3>Read software engineering notes</h3>
+
+                        <span class="priority low">
+                            Low Priority
+                        </span>
+
+                    </div>
+
+                    <div class="task-status completed">
+                        Completed
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Task Priority Manager • Built with Java, HTML & CSS
+        </p>
+
+    </footer>
+
+</body>
+</html>
